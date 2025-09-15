@@ -71,7 +71,8 @@ class Channel::WebWidget < ApplicationRecord
         g.onload=function(){
           window.chatwootSDK.run({
             websiteToken: '#{website_token}',
-            baseUrl: BASE_URL
+            baseUrl: BASE_URL,
+            launcherIcon: \"http://127.0.0.1:8000/chatwoot_bot.png\"
           })
         }
       })(document,\"script\");

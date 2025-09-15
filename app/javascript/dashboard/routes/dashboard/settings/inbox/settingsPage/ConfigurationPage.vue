@@ -201,6 +201,8 @@ export default {
         :title="$t('INBOX_MGMT.SETTINGS_POPUP.MESSENGER_HEADING')"
         :sub-title="$t('INBOX_MGMT.SETTINGS_POPUP.MESSENGER_SUB_HEAD')"
       >
+        <p />
+
         <woot-code
           :script="inbox.web_widget_script"
           lang="html"

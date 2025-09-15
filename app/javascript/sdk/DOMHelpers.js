@@ -1,9 +1,10 @@
-import { SDK_CSS } from './sdk.js';
+import { loadCSSCustomizado } from './sdk.js';
 import { IFrameHelper } from './IFrameHelper';
 
-export const loadCSS = () => {
+export const loadCSS = laucherIcon => {
   const css = document.createElement('style');
-  css.innerHTML = `${SDK_CSS}`;
+  var cssCustomizado = loadCSSCustomizado(laucherIcon);
+  css.innerHTML = `${cssCustomizado}`;
   css.id = 'cw-widget-styles';
   css.dataset.turboPermanent = true;
   document.body.appendChild(css);
